@@ -1,0 +1,58 @@
+body{
+    width:full;
+    height:screen;
+}
+
+
+.container
+{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#game{
+    margin-top: 30px;
+    width: 550px;
+    height:400px;
+    background-color: gainsboro;
+    border:1px solid black;
+    border-radius:8px;
+    padding:10px 10px;
+}
+.buttons{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+
+    width:100px;
+    height:30px;
+    border:none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+
+}
+#header {
+    display: flex;
+    justify-content: center;
+}
+#header button{
+
+    width:100px;
+    height:35px;
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius: 8px;
+}
+
+#header button:active{
+    transform: scale(0.85);
+}

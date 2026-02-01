@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+
+    <div class="container">
+              
+        <h1>Calculator</h1>
+
+        <div class="actualContent">
+            <div class="calculator">
+
+            <div class="display">
+                <div class="inputbox">
+                    <input id="ipt-box"  type="text" readonly>
+                </div>
+            </div>
+             <div class="row">
+            <div class="bigButton"><button onclick="btnClick('all_clear')">C</button></div>
+              <div class="buttonNumber"><button class="special-btn "onclick="btnClick('single_clear')">⌫</button></div>
+              <div class="operator"><button class="operator" id= "divide"onclick="btnClick('/')">/</button></div>
+
+            </div>
+            <div class="row">
+              <div class="buttonNumber"><button id="seven"onclick="btnClick(7)">7</button></div>
+              <div class="buttonNumber"><button id="eight"onclick="btnClick(8)">8</button></div>
+              <div class="buttonNumber"><button id="nine" onclick="btnClick(9)">9</button></div>
+               <div class="operator"><button onclick="btnClick('*')" id="multiply">*</button></div>
+            </div>
+            <div class="row">
+                <div class="buttonNumber"><button id="four"onclick="btnClick(4)">4</button></div>
+              <div class="buttonNumber"><button id="five"onclick="btnClick(5)">5</button></div>
+              <div class="buttonNumber"><button id="six"onclick="btnClick(6)">6</button></div>
+               <div class="operator"><button onclick="btnClick('+')"id= "add">+</button></div>
+            </div>
+            <div class="row">
+              <div class="buttonNumber"><button id="one"onclick="btnClick(1)">1</button></div>
+              <div class="buttonNumber"><button id="two" onclick="btnClick(2)">2</button></div>
+              <div class="buttonNumber"><button id="three" onclick="btnClick(3)">3</button></div>
+               <div class="operator"><button onclick="btnClick('-')" id="sub">-</button></div>
+
+            </div>
+            <div class="row">
+                 <div class="bigButton"><button onclick="btnClick(0)">0</button></div>
+              <div class="buttonNumber"><button onclick="btnClick('.')">.</button></div>
+               <div class="operator"><button onclick="btnClick('=')"id="calculate">=</button></div>
+              
+
+            </div>
+          
+        </div>
+        <div class="historyBar">
+            <div class="screen">
+             
+            </div>
+            <button onclick="clearHistory()">clearHistory</button>
+        </div>
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
