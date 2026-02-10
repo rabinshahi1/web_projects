@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+/* Header */
+.head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.head h1 {
+    color: #333;
+}
+
+/* Store layout */
+.store {
+    display: flex;
+    gap: 20px;
+}
+
+/* Product & Cart sections */
+.product,
+.mycart {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section titles (optional if you add later) */
+.product::before {
+    content: "Products";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mycart::before {
+    content: "My Cart";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Item card */
+.item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+}
+
+/* Text */
+.item h6 {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Button */
+.add-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+.remove-btn{
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(27, 184, 69, 0.2);
+}
+.remove-whole-btn{
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color:rgba(255, 0, 0, 0.3)
+
+}
+.remove-btn:hover{
+ background-color: rgba(9, 237, 55, 0.9);
+}
+.remove-whole-btn:hover{
+    background-color: red;
+}
