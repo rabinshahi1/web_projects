@@ -1,0 +1,1 @@
+Just practicing the HTML, JS and css   .. understanding the core concepts to build  the foundation & applying these concepte to build  production grade app..
